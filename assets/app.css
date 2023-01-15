@@ -574,3 +574,7 @@ video {
   font-family: "Platform-Medium";
   src: url("../../assets/Platform-Medium.otf");
 }
+@font-face {
+  font-family: "Adelia";
+  src: url("../../assets/adelia.otf");
+}
