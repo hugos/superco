@@ -541,6 +541,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(103 232 249 / var(--tw-bg-opacity));
 }
+.bg-cyan-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
 .font-bold {
   font-weight: 700;
 }
