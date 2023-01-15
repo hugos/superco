@@ -578,5 +578,5 @@ video {
 }
 @font-face {
   font-family: "Adelia";
-  src: url('../../assets/adelia.otf');
+  src: url('./adelia.otf');
 }
