@@ -540,6 +540,9 @@ video {
 .font-GTmedium {
   font-family: GT-Super-Medium;
 }
+.font-PTmedium {
+  font-family: Platform-Medium;
+}
 .font-bold {
   font-weight: 700;
 }
