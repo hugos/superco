@@ -537,6 +537,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
+.font-GTmedium {
+  font-family: GT-Super-Medium;
+}
 .font-bold {
   font-weight: 700;
 }
