@@ -565,16 +565,16 @@ video {
 
 @font-face {
   font-family: "GT-Super-Medium";
-  src: url('../../assets/GT-Super-Display-Medium.otf');
+  src: url('./assets/GT-Super-Display-Medium.otf');
 }
 @font-face {
   font-family: "GT-Super-Light";
-  src: url('../../assets/GT-Super-Display-Light.otf');
+  src: url('./assets/GT-Super-Display-Light.otf');
 }
 
 @font-face {
   font-family: "Platform-Medium";
-  src: url('../../assets/Platform-Medium.otf');
+  src: url('./Platform-Medium.otf');
 }
 @font-face {
   font-family: "Adelia";
