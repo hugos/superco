@@ -537,9 +537,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
-.font-adelia {
-  font-family: Adelia;
-}
 .font-GT-light {
   font-family: GT-Super-Light;
 }
@@ -567,11 +564,11 @@ video {
 }
 @font-face {
   font-family: "GT-Super-Medium";
-  src: url("./assets/GT-Super-Display-Medium.otf");
+  src: url("./GT-Super-Display-Medium.otf");
 }
 @font-face {
   font-family: "GT-Super-Light";
-  src: url("./assets/GT-Super-Display-Light.otf");
+  src: url("./GT-Super-Display-Light.otf");
 }
 @font-face {
   font-family: "Platform-Medium";
