@@ -538,6 +538,9 @@ video {
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 .font-GT-light {
+  font-family: GT-light;
+}
+.font-GT-light {
   font-family: GT-Super-Light;
 }
 .font-bold {
