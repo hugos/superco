@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "GT-Super-Medium";
+    src: url('./assets/GT-Super-Display-Medium.otf');
+  }
+  @font-face {
+    font-family: "GT-Super-Light";
+    src: url('./assets/GT-Super-Display-Light.otf');
+  }
+  
+  @font-face {
+    font-family: "Platform-Medium";
+    src: url('./Platform-Medium.otf');
+  }
+  @font-face {
+    font-family: "Adelia";
+    src: url('./adelia.otf');
+  }

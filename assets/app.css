@@ -516,9 +516,9 @@ video {
 .table {
   display: table;
 }
-.grid {
+/* .grid {
   display: grid;
-}
+} */
 .hidden {
   display: none;
 }
@@ -562,21 +562,19 @@ video {
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-
 @font-face {
   font-family: "GT-Super-Medium";
-  src: url('./assets/GT-Super-Display-Medium.otf');
+  src: url("./assets/GT-Super-Display-Medium.otf");
 }
 @font-face {
   font-family: "GT-Super-Light";
-  src: url('./assets/GT-Super-Display-Light.otf');
+  src: url("./assets/GT-Super-Display-Light.otf");
 }
-
 @font-face {
   font-family: "Platform-Medium";
-  src: url('./Platform-Medium.otf');
+  src: url("./Platform-Medium.otf");
 }
 @font-face {
   font-family: "Adelia";
-  src: url('./adelia.otf');
+  src: url("./adelia.otf");
 }
