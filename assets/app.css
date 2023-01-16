@@ -516,9 +516,9 @@ video {
 .table {
   display: table;
 }
-.grid {
+/* .grid {
   display: grid;
-}
+} */
 .hidden {
   display: none;
 }
