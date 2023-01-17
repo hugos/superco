@@ -5,7 +5,7 @@
       <img class="h-[200px]" src="{{ section.settings.image_src | img_url: '200x200'}}" />
     </div>
     <div id="card-text" class="flex-col flex items-center  top-[260px] absolute translate-x[-50%] gap-2 text-black w-10/12">
-      <div class="text-3xl font-GTlight">Make it extra</div>
+      <div class="text-3xl font-GTlight">{{ block.settings.heading | escape }}</div>
       <div class="flex-col items-center gap-4 text-center text-sm">
         <div>Once you’ve chosen a scene, you can dial it up with fun a la carte add-ons.</div>
       </div>
@@ -31,23 +31,24 @@
     "tag": "section",
     "class": "section section-content-cards",
     "limit": 1,
+    "max_blocks": 4,
     "settings": [
       {
         "type": "text",
         "id": "title",
-        "label": "Slideshow"
+        "label": "Card Block"
       }
     ],
-    "max_blocks": 4,
     "blocks": [
       {
-        "name": "Slide",
-        "type": "slide",
+        "type": "card_block",
+        "name": "Card Block",
         "settings": [
           {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
+            "id": "heading",
+            "type": "text",
+            "default": "Make it extra",
+            "label": "Card Heading"
           }
         ]
       }
@@ -60,7 +61,7 @@
         },
         "blocks": [
           {
-            "type": "slide"
+            "type": "card_block"
           }
         ]
       }
