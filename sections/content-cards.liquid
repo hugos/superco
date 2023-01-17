@@ -6,9 +6,7 @@
     </div>
     <div id="card-text" class="flex-col flex items-center  top-[260px] absolute translate-x[-50%] gap-2 text-black w-10/12">
       <div class="text-3xl font-GTlight">
-        {%- if block.settings.heading != blank -%}
-          {{ block.settings.heading | escape }}
-        {%- endif -%}
+        h{{ block.settings.heading | escape }}
       </div>
       <div class="flex-col items-center gap-4 text-center text-sm">
         <div>Once you’ve chosen a scene, you can dial it up with fun a la carte add-ons.</div>
