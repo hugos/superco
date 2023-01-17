@@ -607,6 +607,9 @@ video {
 .font-GTlight {
   font-family: GT-Super-Light;
 }
+.font-PT-m {
+  font-family: Platform-Medium;
+}
 .text-3xl {
   font-size: 30px;
 }
