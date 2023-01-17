@@ -519,6 +519,9 @@ video {
 .top-3 {
   top: 0.75rem;
 }
+.top-\[200px\] {
+  top: 200px;
+}
 .isolate {
   isolation: isolate;
 }
