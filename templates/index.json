@@ -104,6 +104,22 @@
         "padding_bottom": 36
       }
     },
+    "90037d2f-688e-4b35-9d3c-ffbcbc705a81": {
+      "type": "content-cards",
+      "blocks": {
+        "template--17594265633071__90037d2f-688e-4b35-9d3c-ffbcbc705a81-167396561201963a34-0": {
+          "type": "slide",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17594265633071__90037d2f-688e-4b35-9d3c-ffbcbc705a81-167396561201963a34-0"
+      ],
+      "settings": {
+        "title": "Content Cards"
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -214,6 +230,7 @@
     "image_banner",
     "rich_text",
     "featured_collection",
+    "90037d2f-688e-4b35-9d3c-ffbcbc705a81",
     "collage",
     "video",
     "multicolumn"
