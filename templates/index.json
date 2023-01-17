@@ -107,14 +107,36 @@
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81": {
       "type": "content-cards",
       "blocks": {
-        "template--17594265633071__90037d2f-688e-4b35-9d3c-ffbcbc705a81-167396561201963a34-0": {
-          "type": "slide",
+        "378d0426-b873-4055-92de-2a872c61d0c9": {
+          "type": "card_block",
           "settings": {
+            "heading": ""
+          }
+        },
+        "6e265822-6759-4270-a19b-2b0048ca9952": {
+          "type": "card_block",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "359ebf66-1111-4bb4-bedb-dd61e3b679ab": {
+          "type": "card_block",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "60ed7854-0fbb-4c03-9579-e128ecc2b85d": {
+          "type": "card_block",
+          "settings": {
+            "heading": ""
           }
         }
       },
       "block_order": [
-        "template--17594265633071__90037d2f-688e-4b35-9d3c-ffbcbc705a81-167396561201963a34-0"
+        "378d0426-b873-4055-92de-2a872c61d0c9",
+        "6e265822-6759-4270-a19b-2b0048ca9952",
+        "359ebf66-1111-4bb4-bedb-dd61e3b679ab",
+        "60ed7854-0fbb-4c03-9579-e128ecc2b85d"
       ],
       "settings": {
         "title": "Content Cards"
