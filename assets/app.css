@@ -607,6 +607,9 @@ video {
 .font-PT-m {
   font-family: Platform-Medium;
 }
+.font-PT-r {
+  font-family: Platform-Regular;
+}
 .text-3xl {
   font-size: 30px;
 }
