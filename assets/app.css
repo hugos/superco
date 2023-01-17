@@ -568,8 +568,14 @@ video {
 .h-\[250px\] {
   height: 250px;
 }
+.h-\[433px\] {
+  height: 433px;
+}
 .w-full {
   width: 100%;
+}
+.w-\[332px\] {
+  width: 332px;
 }
 .max-w-sm {
   max-width: 24rem;
