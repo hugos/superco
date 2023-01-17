@@ -557,9 +557,6 @@ video {
 .w-\[332px\] {
   width: 332px;
 }
-.w-3\/6 {
-  width: 50%;
-}
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -612,9 +609,6 @@ video {
 }
 .text-3xl {
   font-size: 30px;
-}
-.text-base {
-  font-size: 16px;
 }
 .text-sm {
   font-size: 14px;
