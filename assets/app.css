@@ -565,6 +565,9 @@ video {
 .h-2 {
   height: 0.5rem;
 }
+.h-\[250px\] {
+  height: 250px;
+}
 .w-full {
   width: 100%;
 }
