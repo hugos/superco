@@ -511,6 +511,10 @@ video {
   margin-left: 2rem;
   margin-right: 2rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -588,6 +592,10 @@ video {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .pt-4 {
   padding-top: 1rem;
 }
@@ -661,4 +669,11 @@ video {
 @font-face {
   font-family: "Adelia";
   src: url("./adelia.otf");
+}
+@media (min-width: 768px) {
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
