@@ -510,6 +510,15 @@ video {
 .sticky {
   position: sticky;
 }
+.left-3 {
+  left: 0.75rem;
+}
+.right-3 {
+  right: 0.75rem;
+}
+.top-3 {
+  top: 0.75rem;
+}
 .isolate {
   isolation: isolate;
 }
