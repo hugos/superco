@@ -501,6 +501,9 @@ video {
     max-width: 1536px;
   }
 }
+.relative {
+  position: relative;
+}
 .sticky {
   position: sticky;
 }
