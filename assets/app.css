@@ -553,6 +553,9 @@ video {
 .hidden {
   display: none;
 }
+.h-2 {
+  height: 0.5rem;
+}
 .w-full {
   width: 100%;
 }
