@@ -750,6 +750,11 @@ video {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 @media (min-width: 1024px) {
 
