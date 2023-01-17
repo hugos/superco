@@ -1,5 +1,5 @@
 <section class="max-w-sm rounded overflow-hidden shadow-lg">
-  <img class="w-full" src="{{ section.settings.sampleid | img_url: '200x200'}}" />
+  <img class="w-full" src="{{ section.settings.image_src | img_url: '200x200'}}" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
     <p class="text-gray-700 text-base">
@@ -12,3 +12,60 @@
     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
   </div>
 </section>
+
+{% schema %}
+  {
+    "name": "Content Cards",
+    "tag": "section",
+    "class": "slideshow",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Slideshow"
+      }
+    ],
+    "max_blocks": 5,
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slideshow",
+        "settings": {
+          "title": "Slideshow"
+        },
+        "blocks": [
+          {
+            "type": "slide"
+          }, {
+            "type": "slide"
+          }
+        ]
+      }
+    ],
+    "locales": {
+      "en": {
+        "title": "Slideshow"
+      },
+      "fr": {
+        "title": "Diaporama"
+      }
+    },
+    "enabled_on": {
+      "templates": ["*"],
+      "groups": ["footer"]
+    }
+  }
+{% endschema %}
