@@ -142,6 +142,7 @@
         },
         "8c94ebbb-a372-4f7e-85be-2d65b390402e": {
           "type": "card_block",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_2892.jpg",
             "heading": "Make it happen.",
@@ -159,7 +160,7 @@
         "8c94ebbb-a372-4f7e-85be-2d65b390402e"
       ],
       "settings": {
-        "cards_desktop": 4
+        "cards_desktop": 3
       }
     },
     "multicolumn": {
