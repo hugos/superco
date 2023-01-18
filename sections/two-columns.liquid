@@ -10,9 +10,6 @@
           <img class="h-[224px]" src="{{ block.settings.image | img_url: '1200x1200'}}" />
         </div>
         <div id="card-text" class="flex-col flex items-center  top-[260px] absolute translate-x[-50%] gap-2 text-black w-10/12">
-          <div class="text-3xl font-GTlight">
-            {{ block.settings.heading | escape }}
-          </div>
           <div class="flex-col items-center gap-4 text-center text-sm">
             <div>{{ block.settings.content_text }}</div>
           </div>
@@ -54,12 +51,6 @@
             "id": "image",
             "type": "image_picker",
             "label": "Card Image"
-          },
-          {
-            "id": "heading",
-            "type": "text",
-            "label": "Card Heading",
-            "default": "Card Title"
           },
           {
             "id": "content_text",
