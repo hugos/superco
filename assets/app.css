@@ -742,6 +742,12 @@ video {
   font-family: "Adelia";
   src: url("./adelia.otf");
 }
+@media (min-width: 640px) {
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+}
 @media (min-width: 768px) {
 
   .md\:px-12 {
