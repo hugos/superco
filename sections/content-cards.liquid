@@ -1,0 +1,90 @@
+<section class="container max-w-screen-2xl mx-auto px-4 md:px-12 lg:grid cols-grid-{{ section.settings.cards_desktop }}">
+  {%- for block in section.blocks -%}
+    <div class="w-full mb-12 mt-12">
+      <div class="flex flex-col mb-20 relative p-3 my-1 px-1 content-card items-center h-[433px] w-[332px] {{ block.settings.card_bg_color }}">
+        <div class="flex flex-col absolute left-3 right-3 top-3">
+          <img class="h-[224px]" src="{{ block.settings.image | img_url: '1200x1200'}}" />
+        </div>
+        <div id="card-text" class="flex-col flex items-center  top-[260px] absolute translate-x[-50%] gap-2 text-black w-10/12">
+          <div class="text-3xl font-GTlight">
+            h{{ block.settings.heading | escape }}
+          </div>
+          <div class="flex-col items-center gap-4 text-center text-sm">
+            <div>Once you’ve chosen a scene, you can dial it up with fun a la carte add-ons.</div>
+          </div>
+          <div class="flex-col items-center font-PT-r font-medium gap-4 text-center text-sm uppercase">
+            <div>SHOP PARTY SUPPLIES</div>
+            <div class="card-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{%- for block in section.blocks -%}
+<style>
+  .content-card {
+    background-color: {{ block.settings.background }};
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+  }
+</style>
+{% endfor %}
+
+
+{% schema %}
+  {
+    "name": "Content Cards",
+    "tag": "section",
+    "class": "section",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "range",
+        "id": "cards_desktop",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "default": 4,
+        "label": "Desktop Cards"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card_block",
+        "name": "Card Block",
+        "settings": [
+          {
+            "id": "heading",
+            "type": "text",
+            "label": "Card Heading"
+          },
+          {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Card Image"
+          },
+          {
+          "id": "background",
+          "type": "color",
+          "label": "Card Color",
+          "default": "#cccccc"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Content Cards",
+        "blocks": [
+          {
+            "type": "card_block"
+          }, {
+            "type": "card_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

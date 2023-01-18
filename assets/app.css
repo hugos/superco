@@ -501,11 +501,46 @@ video {
     max-width: 1536px;
   }
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .sticky {
   position: sticky;
 }
+.left-3 {
+  left: 0.75rem;
+}
+.right-3 {
+  right: 0.75rem;
+}
+.top-3 {
+  top: 0.75rem;
+}
+.top-\[260px\] {
+  top: 260px;
+}
 .isolate {
   isolation: isolate;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mt-12 {
+  margin-top: 3rem;
 }
 .block {
   display: block;
@@ -516,17 +551,53 @@ video {
 .table {
   display: table;
 }
-/* .grid {
+.grid {
   display: grid;
-} */
+}
 .hidden {
   display: none;
+}
+.h-\[433px\] {
+  height: 433px;
+}
+.h-\[200px\] {
+  height: 200px;
+}
+.h-\[224px\] {
+  height: 224px;
+}
+.w-\[332px\] {
+  width: 332px;
+}
+.w-10\/12 {
+  width: 83.333333%;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
 .flex-wrap {
   flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .truncate {
   overflow: hidden;
@@ -537,11 +608,43 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
-.font-adelia {
-  font-family: Adelia;
+.p-3 {
+  padding: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.text-center {
+  text-align: center;
+}
+.font-GTlight {
+  font-family: GT-Super-Light;
+}
+.font-PT-m {
+  font-family: Platform-Medium;
+}
+.font-PT-r {
+  font-family: Platform-Regular;
+}
+.text-3xl {
+  font-size: 30px;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-xs {
+  font-size: 12px;
 }
 .font-bold {
   font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
 }
 .uppercase {
   text-transform: uppercase;
@@ -551,6 +654,10 @@ video {
 }
 .italic {
   font-style: italic;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .outline {
   outline-style: solid;
@@ -564,17 +671,46 @@ video {
 }
 @font-face {
   font-family: "GT-Super-Medium";
-  src: url("./assets/GT-Super-Display-Medium.otf");
+  src: url("./GT-Super-Display-Medium.otf");
 }
 @font-face {
   font-family: "GT-Super-Light";
-  src: url("./assets/GT-Super-Display-Light.otf");
+  src: url("./GT-Super-Display-Light.otf");
 }
 @font-face {
   font-family: "Platform-Medium";
   src: url("./Platform-Medium.otf");
 }
 @font-face {
+  font-family: "Platform-Regular";
+  src: url("./Platform-Regular.otf");
+}
+@font-face {
   font-family: "Adelia";
   src: url("./adelia.otf");
+}
+@media (min-width: 768px) {
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:grid {
+    display: grid;
+  }
 }
