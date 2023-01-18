@@ -22,6 +22,7 @@
   {% endfor %}
 </section>
 
+{%- for block in section.blocks -%}
 <style>
   .content-card {
     background-color: {{ block.settings.background }};
@@ -29,6 +30,7 @@
     margin: 0 auto;
   }
 </style>
+{% endfor %}
 
 
 {% schema %}
