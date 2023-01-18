@@ -522,6 +522,9 @@ video {
 .top-\[260px\] {
   top: 260px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .isolate {
   isolation: isolate;
 }
