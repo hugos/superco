@@ -575,6 +575,9 @@ video {
 .h-\[800px\] {
   height: 800px;
 }
+.min-h-full {
+  min-height: 100%;
+}
 .w-full {
   width: 100%;
 }
