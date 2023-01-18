@@ -1,5 +1,28 @@
 {
   "sections": {
+    "555be501-aec9-45c8-bbff-3784255b5294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17594265633071__555be501-aec9-45c8-bbff-3784255b5294-1674057673220072d4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>HAVING FUN 101<\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17594265633071__555be501-aec9-45c8-bbff-3784255b5294-1674057673220072d4-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81": {
       "type": "content-cards",
       "blocks": {
@@ -60,6 +83,7 @@
     }
   },
   "order": [
+    "555be501-aec9-45c8-bbff-3784255b5294",
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81"
   ]
 }
