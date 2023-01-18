@@ -11,13 +11,15 @@
         </div>
         <div id="card-text" class="flex-col flex items-center  top-[260px] absolute translate-x[-50%] gap-2 text-black w-10/12">
           <div class="text-3xl font-GTlight">
-            h{{ block.settings.heading | escape }}
+            {{ block.settings.heading | escape }}
           </div>
           <div class="flex-col items-center gap-4 text-center text-sm">
             <div>Once you’ve chosen a scene, you can dial it up with fun a la carte add-ons.</div>
           </div>
           <div class="flex-col items-center font-PT-r font-medium gap-4 text-center text-sm uppercase">
-            <div>SHOP PARTY SUPPLIES</div>
+            <div>
+              <a href="{{ block.settings.link }}">{{ block.settings.link_text }}</a>
+            </div>
             <div class="card-bottom"></div>
           </div>
         </div>
@@ -69,6 +71,17 @@ margin: 0 auto;
             "type": "color",
             "label": "Card Color",
             "default": "#cccccc"
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Text URL"
+          },
+          {
+            "id": "link_text",
+            "type": "text",
+            "label": "Text",
+            "default": "SHOP"
           }
         ]
       }
