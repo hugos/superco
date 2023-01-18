@@ -572,6 +572,9 @@ video {
 .h-\[224px\] {
   height: 224px;
 }
+.h-\[800px\] {
+  height: 800px;
+}
 .w-full {
   width: 100%;
 }
@@ -580,6 +583,9 @@ video {
 }
 .w-10\/12 {
   width: 83.333333%;
+}
+.w-\[672px\] {
+  width: 672px;
 }
 .max-w-screen-2xl {
   max-width: 1536px;
