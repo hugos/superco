@@ -750,6 +750,10 @@ video {
 }
 @media (min-width: 768px) {
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
