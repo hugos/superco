@@ -96,8 +96,9 @@
         "template--17594265633071__8ac378db-f108-4373-a3f3-0a5994095e8b-167405800591f85161-1": {
           "type": "card_block",
           "settings": {
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
+            "image": "shopify:\/\/shop_images\/Rectangle_324_copy.png",
+            "content_text": "The Limited-Edition Holiday Scene",
+            "link_text": "SHOP the scene",
             "link": ""
           }
         }
