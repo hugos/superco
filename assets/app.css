@@ -688,6 +688,10 @@ video {
 }
 @media (min-width: 640px) {
 
+  .sm\:m-auto {
+    margin: auto;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
