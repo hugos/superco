@@ -111,10 +111,10 @@
           "type": "card_block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_289.jpg",
-            "heading": "",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
+            "heading": "Make a scene.",
+            "content_text": "Everything you need for a great party, from decor to drinks and games.",
             "background": "#00966e",
-            "link_text": "SHOP",
+            "link_text": "find your scene",
             "link": ""
           }
         },
@@ -122,10 +122,10 @@
           "type": "card_block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_289_copy.jpg",
-            "heading": "",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
+            "heading": "Make it extra.",
+            "content_text": "Once you’ve chosen a scene, you can dial it up with fun a la carte add-ons.",
             "background": "#85abbd",
-            "link_text": "SHOP",
+            "link_text": "shop party supplies",
             "link": ""
           }
         },
