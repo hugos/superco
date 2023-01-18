@@ -3,7 +3,8 @@
 <section class="container max-w-screen-2xl mx-auto px-4 md:px-12 lg:grid cols-grid-{{ section.settings.cards_desktop }}">
   {%- for block in section.blocks -%}
     <div class="w-full mb-12 mt-12">
-      {% capture background_color %}{{ block.settings.background }}{% endcapture %}
+      {% capture background_color %}
+        {{ block.settings.background }}{% endcapture %}
       <div class="flex flex-col mb-20 relative p-3 my-1 px-1 content-card items-center h-[433px] w-[332px]" style="background-color: {{ background_color }};">
         <div class="flex flex-col absolute left-3 right-3 top-3">
           <img class="h-[224px]" src="{{ block.settings.image | img_url: '1200x1200'}}" />
@@ -17,9 +18,7 @@
           </div>
           <div class="flex-col items-center font-PT-r font-medium gap-4 text-center text-sm uppercase">
             <div>SHOP PARTY SUPPLIES</div>
-            <div class="card-bottom">
-              <a href="/"></a>
-            </div>
+            <div class="card-bottom"></div>
           </div>
         </div>
       </div>
@@ -29,16 +28,13 @@
 
 {% comment %} {%- for block in section.blocks -%}
 <style>
-  .content-card {
-    background-color: {{ block.settings.background }};
-    /* background-color: aquamarine; */
-    margin: 0 auto;
-  }
+.content-card {
+background-color: {{ block.settings.background }};
+/* background-color: aquamarine; */
+margin: 0 auto;
+}
 </style>
-{% endfor %} {% endcomment %}
-
-
-{% schema %}
+{% endfor %} {% endcomment %}{% schema %}
   {
     "name": "Content Cards",
     "tag": "section",
@@ -64,17 +60,15 @@
             "id": "heading",
             "type": "text",
             "label": "Card Heading"
-          },
-          {
-          "id": "image",
-          "type": "image_picker",
-          "label": "Card Image"
-          },
-          {
-          "id": "background",
-          "type": "color",
-          "label": "Card Color",
-          "default": "#cccccc"
+          }, {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Card Image"
+          }, {
+            "id": "background",
+            "type": "color",
+            "label": "Card Color",
+            "default": "#cccccc"
           }
         ]
       }
