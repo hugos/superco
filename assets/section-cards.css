@@ -11,3 +11,12 @@
 .cols-grid-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+
+.card-bottom {
+  max-width: 100%;
+  height: 0;
+  max-height: 100%;
+  align-self: stretch;
+  border-bottom: solid 1px #000;
+  margin-bottom: -1px;
+}
