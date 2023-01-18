@@ -107,6 +107,13 @@
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81": {
       "type": "content-cards",
       "blocks": {
+        "6e265822-6759-4270-a19b-2b0048ca9952": {
+          "type": "card_block",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_289.jpg"
+          }
+        },
         "378d0426-b873-4055-92de-2a872c61d0c9": {
           "type": "card_block",
           "settings": {
@@ -114,28 +121,24 @@
             "image": "shopify:\/\/shop_images\/Rectangle_289_copy.jpg"
           }
         },
-        "6e265822-6759-4270-a19b-2b0048ca9952": {
-          "type": "card_block",
-          "settings": {
-            "heading": ""
-          }
-        },
         "359ebf66-1111-4bb4-bedb-dd61e3b679ab": {
           "type": "card_block",
           "settings": {
-            "heading": ""
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_2891.jpg"
           }
         },
         "60ed7854-0fbb-4c03-9579-e128ecc2b85d": {
           "type": "card_block",
           "settings": {
-            "heading": ""
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_2892.jpg"
           }
         }
       },
       "block_order": [
-        "378d0426-b873-4055-92de-2a872c61d0c9",
         "6e265822-6759-4270-a19b-2b0048ca9952",
+        "378d0426-b873-4055-92de-2a872c61d0c9",
         "359ebf66-1111-4bb4-bedb-dd61e3b679ab",
         "60ed7854-0fbb-4c03-9579-e128ecc2b85d"
       ],
