@@ -87,6 +87,7 @@
         "template--17594265633071__8ac378db-f108-4373-a3f3-0a5994095e8b-167405800591f85161-0": {
           "type": "card_block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_324.png",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
             "background": "#cccccc",
             "link_text": "SHOP",
@@ -108,7 +109,6 @@
         "template--17594265633071__8ac378db-f108-4373-a3f3-0a5994095e8b-167405800591f85161-1"
       ],
       "settings": {
-        "cards_desktop": 4
       }
     }
   },
