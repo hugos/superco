@@ -525,6 +525,9 @@ video {
 .isolate {
   isolation: isolate;
 }
+.m-auto {
+  margin: auto;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -687,6 +690,15 @@ video {
   src: url("./adelia.otf");
 }
 @media (min-width: 640px) {
+
+  .sm\:m-auto {
+    margin: auto;
+  }
+
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .sm\:flex {
     display: flex;

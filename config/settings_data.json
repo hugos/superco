@@ -132,13 +132,7 @@
         }
       }
     },
-<<<<<<< HEAD
     "content_for_index": []
-=======
-    "content_for_index": [
-
-    ]
->>>>>>> 6f8c8eb3a561d9094ed9309bfde252e64047b636
   },
   "presets": {
     "Default": {
