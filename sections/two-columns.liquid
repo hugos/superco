@@ -1,6 +1,6 @@
 {{ 'section-cards.css' | asset_url | stylesheet_tag }}
 
-<section class="container max-w-screen-2xl mx-auto px-4 md:px-12 lg:grid cols-grid-2">
+<section class="container max-w-screen-2xl mx-auto px-4 md:px-12 lg:grid grid-cols-2">
   {%- for block in section.blocks -%}
     <div class="w-full mb-12 mt-12">
       {% capture background_color %}
