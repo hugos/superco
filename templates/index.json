@@ -106,6 +106,7 @@
     },
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81": {
       "type": "content-cards",
+<<<<<<< HEAD
       "blocks": {
         "378d0426-b873-4055-92de-2a872c61d0c9": {
           "type": "card_block",
@@ -140,6 +141,127 @@
       ],
       "settings": {
         "title": "Content Cards"
+      }
+    },
+    "collage": {
+      "type": "collage",
+=======
+>>>>>>> 6f8c8eb3a561d9094ed9309bfde252e64047b636
+      "blocks": {
+        "6e265822-6759-4270-a19b-2b0048ca9952": {
+          "type": "card_block",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_289.jpg"
+          }
+        },
+        "378d0426-b873-4055-92de-2a872c61d0c9": {
+          "type": "card_block",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_289_copy.jpg"
+          }
+        },
+        "359ebf66-1111-4bb4-bedb-dd61e3b679ab": {
+          "type": "card_block",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_2891.jpg"
+          }
+        },
+        "60ed7854-0fbb-4c03-9579-e128ecc2b85d": {
+          "type": "card_block",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_2892.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "6e265822-6759-4270-a19b-2b0048ca9952",
+        "378d0426-b873-4055-92de-2a872c61d0c9",
+        "359ebf66-1111-4bb4-bedb-dd61e3b679ab",
+        "60ed7854-0fbb-4c03-9579-e128ecc2b85d"
+      ],
+      "settings": {
+<<<<<<< HEAD
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+=======
+        "cards_desktop": 4
+>>>>>>> 6f8c8eb3a561d9094ed9309bfde252e64047b636
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collage": {
@@ -193,59 +315,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -253,8 +322,11 @@
     "rich_text",
     "featured_collection",
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81",
+<<<<<<< HEAD
+=======
+    "multicolumn",
+>>>>>>> 6f8c8eb3a561d9094ed9309bfde252e64047b636
     "collage",
-    "video",
-    "multicolumn"
+    "video"
   ]
 }
