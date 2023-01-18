@@ -110,35 +110,45 @@
         "6e265822-6759-4270-a19b-2b0048ca9952": {
           "type": "card_block",
           "settings": {
-            "heading": "",
             "image": "shopify:\/\/shop_images\/Rectangle_289.jpg",
-            "background": "#00966e"
+            "heading": "",
+            "content_text": "Write something that can cultivate your clients interest about your brand.",
+            "background": "#00966e",
+            "link_text": "SHOP",
+            "link": ""
           }
         },
         "378d0426-b873-4055-92de-2a872c61d0c9": {
           "type": "card_block",
           "settings": {
-            "heading": "",
             "image": "shopify:\/\/shop_images\/Rectangle_289_copy.jpg",
-            "background": "#85abbd"
+            "heading": "",
+            "content_text": "Write something that can cultivate your clients interest about your brand.",
+            "background": "#85abbd",
+            "link_text": "SHOP",
+            "link": ""
           }
         },
         "359ebf66-1111-4bb4-bedb-dd61e3b679ab": {
           "type": "card_block",
           "settings": {
-            "heading": "",
             "image": "shopify:\/\/shop_images\/Rectangle_2891.jpg",
-            "background": "#e3ff21"
+            "heading": "",
+            "content_text": "Write something that can cultivate your clients interest about your brand.",
+            "background": "#e3ff21",
+            "link_text": "SHOP",
+            "link": ""
           }
         },
         "8c94ebbb-a372-4f7e-85be-2d65b390402e": {
           "type": "card_block",
           "settings": {
-            "heading": "Make it happen.",
             "image": "shopify:\/\/shop_images\/Rectangle_2892.jpg",
+            "heading": "Make it happen.",
+            "content_text": "Need a bartender, caterer, or DJ? Just add to cart. It's that easy.",
             "background": "#bf91c4",
-            "link": "",
-            "link_text": "SHOP"
+            "link_text": "Browse Vendors",
+            "link": ""
           }
         }
       },
