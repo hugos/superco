@@ -131,12 +131,14 @@
             "background": "#e3ff21"
           }
         },
-        "60ed7854-0fbb-4c03-9579-e128ecc2b85d": {
+        "8c94ebbb-a372-4f7e-85be-2d65b390402e": {
           "type": "card_block",
           "settings": {
-            "heading": "",
+            "heading": "Make it happen.",
             "image": "shopify:\/\/shop_images\/Rectangle_2892.jpg",
-            "background": "#bf91c4"
+            "background": "#bf91c4",
+            "link": "",
+            "link_text": "SHOP"
           }
         }
       },
@@ -144,7 +146,7 @@
         "6e265822-6759-4270-a19b-2b0048ca9952",
         "378d0426-b873-4055-92de-2a872c61d0c9",
         "359ebf66-1111-4bb4-bedb-dd61e3b679ab",
-        "60ed7854-0fbb-4c03-9579-e128ecc2b85d"
+        "8c94ebbb-a372-4f7e-85be-2d65b390402e"
       ],
       "settings": {
         "cards_desktop": 4
