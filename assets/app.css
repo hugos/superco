@@ -533,14 +533,14 @@ video {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
-}
 .mb-12 {
   margin-bottom: 3rem;
 }
 .mt-12 {
   margin-top: 3rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
 }
 .block {
   display: block;
@@ -560,11 +560,11 @@ video {
 .h-\[433px\] {
   height: 433px;
 }
-.h-\[200px\] {
-  height: 200px;
-}
 .h-\[224px\] {
   height: 224px;
+}
+.w-full {
+  width: 100%;
 }
 .w-\[332px\] {
   width: 332px;
@@ -572,17 +572,11 @@ video {
 .w-10\/12 {
   width: 83.333333%;
 }
-.w-full {
-  width: 100%;
-}
 .max-w-screen-2xl {
   max-width: 1536px;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -625,9 +619,6 @@ video {
 .font-GTlight {
   font-family: GT-Super-Light;
 }
-.font-PT-m {
-  font-family: Platform-Medium;
-}
 .font-PT-r {
   font-family: Platform-Regular;
 }
@@ -637,14 +628,11 @@ video {
 .text-sm {
   font-size: 14px;
 }
-.text-xs {
-  font-size: 12px;
+.font-medium {
+  font-weight: 500;
 }
 .font-bold {
   font-weight: 700;
-}
-.font-medium {
-  font-weight: 500;
 }
 .uppercase {
   text-transform: uppercase;
@@ -690,18 +678,6 @@ video {
   src: url("./adelia.otf");
 }
 @media (min-width: 768px) {
-
-  .md\:grid {
-    display: grid;
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 
   .md\:px-12 {
     padding-left: 3rem;
