@@ -3,8 +3,8 @@
 <section class="featured-product-slider">
   {%- for block in section.blocks -%}
     <div class="carousel">
-        <div class="mb-12 mt-12 carousel-cell">
-          <div class="product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] sm:w-1/2 md:w-full bg-white">
+        <div class="mb-12 mt-12">
+          <div class="carousel-cell product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] sm:w-1/2 md:w-full bg-white">
             <div class="">
               {% assign product = all_products[block.settings.product_item] %}
               {% if block.settings.image != blank %}
