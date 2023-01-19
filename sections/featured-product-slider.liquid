@@ -7,7 +7,7 @@
           {% if block.settings.image != blank %}
             <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
           {% else %}
-            <img class="h-[313px] bg-slate-400" {{'product-1' | placeholder_svg_tag }} />
+            <img class="h-[313px] bg-slate-400" {{  'product-1' | placeholder_svg_tag }} />
           {% endif %}
         </div>
         <div id="card-text" class="flex-row justify-between flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-10/12">
