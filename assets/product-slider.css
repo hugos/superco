@@ -2,3 +2,7 @@
     height: 313px;
     background-color:rgb(255,255,255, 0.3);
 }
+
+.carousel_cell {
+    margin-right: 10px;
+}
