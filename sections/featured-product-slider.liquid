@@ -2,36 +2,38 @@
 
 <section class="container featured-product-slider mx-auto gap-4 px-4 md:px-12 flex">
   {%- for block in section.blocks -%}
-    <div class="w-full mb-12 mt-12 ">
-      <div class=" product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] sm:w-1/2 md:w-full bg-white">
-        <div class="flex flex-col absolute top-0 left-0 right-0">
-          {% assign product = all_products[block.settings.product_item] %}
-          {% if block.settings.image != blank %}
-            <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
-          {% else %}
-            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
-          {% endif %}
-        </div>
-        <div id="card-text" class="flex-row justify-between flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-10/12">
-          <div class="text-3xl font-GTlight">
-            {{ block.settings.heading | escape }}
-          </div>
-          {% comment %} <div class="flex-col items-center gap-4 text-center text-sm">
-          <div>{{ block.settings.content_text }}</div>
-          </div> {% endcomment %}
-          <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
-            <div>
-              <a href="{{ block.settings.link }}">{{ block.settings.link_text | escape }}</a>
+    <div class="carousel">
+        <div class="w-full mb-12 mt-12 ">
+          <div class=" product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] sm:w-1/2 md:w-full bg-white">
+            <div class="flex flex-col absolute top-0 left-0 right-0">
+              {% assign product = all_products[block.settings.product_item] %}
+              {% if block.settings.image != blank %}
+                <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
+              {% endif %}
+            </div>
+            <div id="card-text" class="flex-row justify-between flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-10/12">
+              <div class="text-3xl font-GTlight">
+                {{ block.settings.heading | escape }}
+              </div>
+              {% comment %} <div class="flex-col items-center gap-4 text-center text-sm">
+              <div>{{ block.settings.content_text }}</div>
+              </div> {% endcomment %}
+              <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
+                <div>
+                  <a href="{{ block.settings.link }}">{{ block.settings.link_text | escape }}</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
   {% endfor %}
 </section>
 
 <script>
-  var elem = document.querySelector('.featured-product-slider .product-card');
+  var elem = document.querySelector('.featured-product-slider .carousel');
   var flkty = new Flickity(elem, {
     contain: true,
     imagesLoaded: true,
