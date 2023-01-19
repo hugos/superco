@@ -5,6 +5,7 @@
 
 .carousel-cell {
     margin-right: 10px;
+    width: 33%;
 }
 /* .flickity-slider {
     width: 50% !important;
