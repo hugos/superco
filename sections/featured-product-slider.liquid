@@ -30,6 +30,29 @@
   {% endfor %}
 </section>
 
+<script>
+  var elem = document.querySelector('.featured-cards .carousel');
+  var flkty = new Flickity(elem, {
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 2,
+    wrapAround: true,
+    pageDots: false
+  });{% if request.design_mode %}
+    document.addEventListener("shopify:section:load", function(event) {
+      var elem = document.querySelector('.featured-cards .carousel');
+      var flkty = new Flickity(elem, {
+        contain: true,
+        imagesLoaded: true,
+        lazyLoad: 2,
+        wrapAround: true,
+        pageDots: false
+      });
+    });{% endif %}
+</script>
+
+
+
 {% schema %}
   {
     "name": "Featured Product Slider",
