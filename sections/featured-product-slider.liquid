@@ -2,7 +2,7 @@
 
 <section class="container featured-product-slider mx-auto gap-4 px-4 md:px-12 flex">
   {%- for block in section.blocks -%}
-    <div class="w-full mb-12 mt-12 ">
+    <div class="product-card w-full mb-12 mt-12 ">
       <div class="flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] sm:w-1/2 md:w-full bg-white">
         <div class="flex flex-col absolute top-0 left-0 right-0">
           {% assign product = all_products[block.settings.product_item] %}
@@ -31,7 +31,7 @@
 </section>
 
 <script>
-  var elem = document.querySelector('.featured-cards .carousel');
+  var elem = document.querySelector('.featured-product-slider .product-card');
   var flkty = new Flickity(elem, {
     contain: true,
     imagesLoaded: true,
@@ -40,7 +40,7 @@
     pageDots: false
   });{% if request.design_mode %}
     document.addEventListener("shopify:section:load", function(event) {
-      var elem = document.querySelector('.featured-cards .carousel');
+      var elem = document.querySelector('.featured-product-slider .product-card'');
       var flkty = new Flickity(elem, {
         contain: true,
         imagesLoaded: true,
