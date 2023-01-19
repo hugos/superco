@@ -6,3 +6,6 @@
 .carousel-cell {
     margin-right: 10px;
 }
+.flickity-slider {
+    width: 50% !important;
+}
