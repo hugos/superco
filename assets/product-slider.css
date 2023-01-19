@@ -13,6 +13,10 @@
         display: none;
       
 }
+.flickity-cell.is-selected {
+    position: absolute;
+    inset: 0;
+  }
 /* .flickity-slider {
     width: 50% !important;
 } */
