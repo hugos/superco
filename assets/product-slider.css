@@ -6,6 +6,12 @@
 .carousel-cell {
     margin-right: 10px;
     width: 100%;
+    overflow: hidden;
+}
+.carousel-cell::after {
+        content: "flickity";
+        display: none;
+      
 }
 /* .flickity-slider {
     width: 50% !important;
