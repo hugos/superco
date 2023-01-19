@@ -525,6 +525,12 @@ video {
 .bottom-14 {
   bottom: 3.5rem;
 }
+.top-0 {
+  top: 0px;
+}
+.right-0 {
+  right: 0px;
+}
 .isolate {
   isolation: isolate;
 }
