@@ -145,6 +145,7 @@
         },
         "91c8dfb5-4ead-40f7-8dd0-375db657af27": {
           "type": "card_block",
+          "disabled": true,
           "settings": {
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
