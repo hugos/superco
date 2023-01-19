@@ -142,12 +142,23 @@
             "link_text": "SHOP",
             "link": ""
           }
+        },
+        "91c8dfb5-4ead-40f7-8dd0-375db657af27": {
+          "type": "card_block",
+          "settings": {
+            "heading": "Card Title",
+            "content_text": "Write something that can cultivate your clients interest about your brand.",
+            "background": "#cccccc",
+            "link_text": "SHOP",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "template--17594265633071__151b571c-3dfc-4ce3-8d0b-efc582cef203-1674078963caa02152-0",
         "template--17594265633071__151b571c-3dfc-4ce3-8d0b-efc582cef203-1674078963caa02152-1",
-        "9de0edd0-4abe-4dc3-b365-366dbc16a3c0"
+        "9de0edd0-4abe-4dc3-b365-366dbc16a3c0",
+        "91c8dfb5-4ead-40f7-8dd0-375db657af27"
       ],
       "settings": {
         "cards_desktop": 4
