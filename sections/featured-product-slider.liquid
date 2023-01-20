@@ -5,35 +5,38 @@
     <div class="carousel">
       <div class="mb-12 mt-12 carousel-cell">
         <div class="product-card flex flex-col m-auto mb-20 relative my-1 content-card items-center h-[385px] w-[418px] bg-white">
-          <form method="post" action="/cart/add">
-          <div>
-            {% assign product = all_products[block.settings.product_item] %}
-            {% if product.featured_image != blank %}
-              <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
-            {% else %}
-              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
-            {% endif %}
-          </div>
-          <div id="card-text" class="flex-row justify-between px-5 flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-full">
-            <div class="text-3xl font-GTlight">
-              {% if product.title != blank %}
-                {{ product.title | strip }}
+          <a
+            href="#"
+            onclick="add_to_cart()"
+            var_id="{{ product.variants.first.id }}">
+            <div>
+              {% assign product = all_products[block.settings.product_item] %}
+              {% if product.featured_image != blank %}
+                <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
               {% else %}
-                <span>Title</span>
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
               {% endif %}
             </div>
-            <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
-              <div>
-                {% if product.price != blank %}
-                  {{ product.price | money_without_trailing_zeros }}
+            <div id="card-text" class="flex-row justify-between px-5 flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-full">
+              <div class="text-3xl font-GTlight">
+                {% if product.title != blank %}
+                  {{ product.title | strip }}
                 {% else %}
-                  <span>$20</span>
+                  <span>Title</span>
                 {% endif %}
+              </div>
+              <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
+                <div>
+                  {% if product.price != blank %}
+                    {{ product.price | money_without_trailing_zeros }}
+                  {% else %}
+                    <span>$20</span>
+                  {% endif %}
 
+                </div>
               </div>
             </div>
-          </div>
-          </form>
+          </a>
         </div>
       </div>
     </div>
@@ -51,24 +54,24 @@
     freeScroll: true
   });
 
-  $(document).ready(function () {
-    $(document).on('click','.product-card',function(){
-        var quantity = $(".quantity option:selected").val();
-        quantity = parseInt(quantity);
-        var id="15426278195309";
-        $.ajax({
-            type: 'POST',
-            url: '/cart/add.js',
-            dataType: 'json',
-            data: {id:id},
-            success: function(){
-                location.href="/cart";
-            }
-        });
+  $(document).ready(function() {
+    $(document).on('click', '.product-card', function() {
+      var quantity = $(".quantity option:selected").val();
+      quantity = parseInt(quantity);
+      var id = "15426278195309";
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        dataType: 'json',
+        data: {
+          id: id
+        },
+        success: function() {
+          location.href = "/cart";
+        }
+      });
     })
-});    
-
-
+  });
 </script>
 {% schema %}
   {
