@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>HAVING FUN 101<\/p>",
-            "heading_size": "h1"
+            "heading_size": "hxl"
           }
         }
       },
@@ -110,67 +110,87 @@
       "settings": {
       }
     },
+    "3b8520be-55ad-4a66-95d1-f608975a294c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17594265633071__3b8520be-55ad-4a66-95d1-f608975a294c-1674228310644169b4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>PARTY A LA CARTE<\/p>",
+            "heading_size": "hxl"
+          }
+        },
+        "template--17594265633071__3b8520be-55ad-4a66-95d1-f608975a294c-1674228310644169b4-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--17594265633071__3b8520be-55ad-4a66-95d1-f608975a294c-1674228310644169b4-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17594265633071__3b8520be-55ad-4a66-95d1-f608975a294c-1674228310644169b4-0",
+        "template--17594265633071__3b8520be-55ad-4a66-95d1-f608975a294c-1674228310644169b4-1",
+        "template--17594265633071__3b8520be-55ad-4a66-95d1-f608975a294c-1674228310644169b4-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "151b571c-3dfc-4ce3-8d0b-efc582cef203": {
       "type": "featured-product-slider",
       "blocks": {
         "template--17594265633071__151b571c-3dfc-4ce3-8d0b-efc582cef203-1674078963caa02152-1": {
           "type": "card_block",
           "settings": {
-            "product_item": "colored-wine-glasses",
-            "heading": "Card Title",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
-            "link": ""
+            "product_item": "colored-wine-glasses"
           }
         },
         "9de0edd0-4abe-4dc3-b365-366dbc16a3c0": {
           "type": "card_block",
           "settings": {
-            "product_item": "figlia-aperitivo",
-            "heading": "Card Title",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
-            "link": ""
+            "product_item": "figlia-aperitivo"
           }
         },
         "91c8dfb5-4ead-40f7-8dd0-375db657af27": {
           "type": "card_block",
           "settings": {
-            "product_item": "classic-barware",
-            "heading": "Card Title",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
-            "link": ""
+            "product_item": "classic-barware"
           }
         },
         "283bd5ac-1969-4866-8da1-75d3aa38819c": {
           "type": "card_block",
           "settings": {
-            "product_item": "colored-wine-glasses",
-            "heading": "Card Title",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
-            "link": ""
+            "product_item": "colored-wine-glasses"
           }
         },
         "570a8a78-d944-473b-af51-4a2c5d8beccb": {
           "type": "card_block",
           "settings": {
-            "product_item": "figlia-aperitivo",
-            "heading": "Card Title",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
-            "link": ""
+            "product_item": "figlia-aperitivo"
           }
         },
         "template--17594265633071__151b571c-3dfc-4ce3-8d0b-efc582cef203-1674078963caa02152-0": {
           "type": "card_block",
           "settings": {
-            "product_item": "classic-barware",
-            "heading": "Card Title",
-            "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "link_text": "SHOP",
-            "link": ""
+            "product_item": "classic-barware"
           }
         }
       },
@@ -191,6 +211,7 @@
     "555be501-aec9-45c8-bbff-3784255b5294",
     "90037d2f-688e-4b35-9d3c-ffbcbc705a81",
     "8ac378db-f108-4373-a3f3-0a5994095e8b",
+    "3b8520be-55ad-4a66-95d1-f608975a294c",
     "151b571c-3dfc-4ce3-8d0b-efc582cef203"
   ]
 }
