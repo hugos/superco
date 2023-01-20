@@ -19,7 +19,7 @@
             </div>
             <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
               <div>
-                <a href="{{ block.settings.link }}">{{ block.settings.link_text | escape }}</a>
+                {{ product.price | money_without_trailing_zeros }}
               </div>
             </div>
           </div>
@@ -64,9 +64,9 @@
         "name": "Card Block",
         "settings": [
           {
-            "id": "image",
-            "type": "image_picker",
-            "label": "Card Image"
+            "id": "product_item",
+            "type": "product",
+            "label": "Choose the Product you want displayed"
           },
           {
             "id": "heading",
