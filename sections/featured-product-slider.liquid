@@ -23,7 +23,12 @@
             </div>
             <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
               <div>
+              {% if product.price != blank %}
                 {{ product.price | money_without_trailing_zeros }}
+              {% else %}
+                <span>$20</span>
+              {% endif %}
+              
               </div>
             </div>
           </div>
