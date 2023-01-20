@@ -48,6 +48,25 @@
     cellAlign: 'center',
     freeScroll: true
   });
+
+  $(document).ready(function () {
+    $(document).on('click','.product-card',function(){
+        var quantity = $(".quantity option:selected").val();
+        quantity = parseInt(quantity);
+        var id="15426278195309";
+        $.ajax({
+            type: 'POST',
+            url: '/cart/add.js',
+            dataType: 'json',
+            data: {id:id},
+            success: function(){
+                location.href="/cart";
+            }
+        });
+    })
+});    
+
+
 </script>
 {% schema %}
   {
