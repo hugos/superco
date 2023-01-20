@@ -3,11 +3,11 @@
 <section class="featured-product-slider m-auto flickity-width">
   {%- for block in section.blocks -%}
     <div class="carousel">
+      {% assign product = all_products[block.settings.product_item] %}
       <div class="mb-12 mt-12 carousel-cell">
         <div class="product-card flex flex-col m-auto mb-20 relative my-1 content-card items-center h-[385px] w-[418px] bg-white">
           <a class="ad_to_cart" var_id="{{ product.variants.first.id }}">
             <div>
-              {% assign product = all_products[block.settings.product_item] %}
               {% if product.featured_image != blank %}
                 <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
               {% else %}
@@ -17,7 +17,7 @@
             <div id="card-text" class="flex-row justify-between px-5 flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-full">
               <div class="text-3xl font-GTlight">
                 {% if product.title != blank %}
-                  {{ product.variants.first.id | strip }}
+                  {{ product.title | strip }}
                 {% else %}
                   <span>Title</span>
                 {% endif %}
