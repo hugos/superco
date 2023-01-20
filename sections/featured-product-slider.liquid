@@ -5,6 +5,7 @@
     <div class="carousel">
       <div class="mb-12 mt-12 carousel-cell">
         <div class="product-card flex flex-col m-auto mb-20 relative my-1 content-card items-center h-[385px] w-[418px] bg-white">
+          <a href="#">
           <div>
             {% assign product = all_products[block.settings.product_item] %}
             {% if product.featured_image != blank %}
@@ -32,6 +33,7 @@
               </div>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>
