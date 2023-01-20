@@ -17,6 +17,7 @@
     position: absolute;
     inset: 0;
   }
-/* .flickity-slider {
-    width: 50% !important;
-} */
+
+.flickity-width {
+    max-width: 1300px;
+}
