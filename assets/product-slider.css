@@ -25,3 +25,6 @@
     outline: none;
     box-shadow: none;
 }
+a.add_to_cart:hover {
+    cursor: pointer;
+}
