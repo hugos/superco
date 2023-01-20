@@ -5,9 +5,7 @@
     <div class="carousel">
       <div class="mb-12 mt-12 carousel-cell">
         <div class="product-card flex flex-col m-auto mb-20 relative my-1 content-card items-center h-[385px] w-[418px] bg-white">
-          <a
-            class="ad_to_cart"
-            var_id="{{ product.variants.first.id }}">
+          <a class="ad_to_cart" var_id="{{ product.variants.first.id }}">
             <div>
               {% assign product = all_products[block.settings.product_item] %}
               {% if product.featured_image != blank %}
@@ -54,7 +52,7 @@
   });
 
 
-  $(document).on('click', '.ad_to_cart', function() {
+  (document).on('click', '.ad_to_cart', function() {
     var obj = $(this);
 
     $.ajax({
