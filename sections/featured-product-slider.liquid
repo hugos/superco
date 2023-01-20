@@ -5,35 +5,37 @@
     <div class="carousel">
       <div class="mb-12 mt-12 carousel-cell">
         <div class="product-card flex flex-col m-auto mb-20 relative my-1 content-card items-center h-[385px] w-[418px] bg-white">
-          <a class="ad_to_cart" var_id="{{ product.variants.first.id }}">
-            <div>
-              {% assign product = all_products[block.settings.product_item] %}
-              {% if product.featured_image != blank %}
-                <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
-              {% else %}
-                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
-              {% endif %}
-            </div>
-            <div id="card-text" class="flex-row justify-between px-5 flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-full">
-              <div class="text-3xl font-GTlight">
-                {% if product.title != blank %}
-                  {{ product.title | strip }}
+          <form method="post" action="/cart/add">
+            <a class="ad_to_cart" value="{{ product.variants.first.id }}">
+              <div>
+                {% assign product = all_products[block.settings.product_item] %}
+                {% if product.featured_image != blank %}
+                  <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
                 {% else %}
-                  <span>Title</span>
+                  {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
                 {% endif %}
               </div>
-              <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
-                <div>
-                  {% if product.price != blank %}
-                    {{ product.price | money_without_trailing_zeros }}
+              <div id="card-text" class="flex-row justify-between px-5 flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-full">
+                <div class="text-3xl font-GTlight">
+                  {% if product.title != blank %}
+                    {{ product.title | strip }}
                   {% else %}
-                    <span>$20</span>
+                    <span>Title</span>
                   {% endif %}
+                </div>
+                <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
+                  <div>
+                    {% if product.price != blank %}
+                      {{ product.price | money_without_trailing_zeros }}
+                    {% else %}
+                      <span>$20</span>
+                    {% endif %}
 
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </form>
         </div>
       </div>
     </div>
@@ -43,34 +45,34 @@
 <script type="text/javascript">
   var elem = document.querySelector('.featured-product-slider');
   var flkty = new Flickity(elem, {
-      contain: true,
-      imagesLoaded: true,
-      wrapAround: true,
-      pageDots: false,
-      cellAlign: 'center',
-      freeScroll: true,
-      draggable: false
-    });
-  
-  
-    $(document).ready(function () {
-    $(document).on('click', '.ad_to_cart', function() {
-      var obj = $(this);
-  
-      $.ajax({
-        type: 'POST',
-        url: '/cart/add.js',
-        data: {
-          quantity: 1,
-          id: $(this).attr("var_id")
-        },
-        dataType: 'json',
-        success: function(data) {
-          alert('Item added to cart');
-        }
+        contain: true,
+        imagesLoaded: true,
+        wrapAround: true,
+        pageDots: false,
+        cellAlign: 'center',
+        freeScroll: true,
+        draggable: false
       });
-    })
-    });</script>
+    
+    
+      $(document).ready(function () {
+      $(document).on('click', '.ad_to_cart', function() {
+        var obj = $(this);
+    
+        $.ajax({
+          type: 'POST',
+          url: '/cart/add.js',
+          data: {
+            quantity: 1,
+            id: $(this).attr("var_id")
+          },
+          dataType: 'json',
+          success: function(data) {
+            alert('Item added to cart');
+          }
+        });
+      })
+      });</script>
 {% schema %}
   {
     "name": "Featured Product Slider",
