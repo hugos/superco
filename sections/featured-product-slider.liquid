@@ -6,7 +6,7 @@
       {% assign product = all_products[block.settings.product_item] %}
       <div class="mb-12 mt-12 carousel-cell">
         <div class="product-card flex flex-col m-auto mb-20 relative my-1 content-card items-center h-[385px] w-[418px] bg-white">
-          <a href="#" class="add_to_cart cursor-pointer" var_id="{{ product.variants.first.id }}">
+          <a href="" class="add_to_cart cursor-pointer" var_id="{{ product.variants.first.id }}">
             <div>
               {% if product.featured_image != blank %}
                 <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
