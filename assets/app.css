@@ -684,6 +684,9 @@ video {
 .font-PT-r {
   font-family: Platform-Regular;
 }
+.font-GT-italic {
+  font-family: GT-Super-Italic;
+}
 .text-3xl {
   font-size: 30px;
 }
