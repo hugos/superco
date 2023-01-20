@@ -7,7 +7,21 @@
   \***********************/
 /***/ (() => {
 
-
+$(document).on('click', '.add_to_cart', function () {
+  var obj = $(this);
+  $.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    data: {
+      quantity: 1,
+      id: $(this).attr("var_id")
+    },
+    dataType: 'json',
+    success: function success(data) {
+      alert('Item added to cart');
+    }
+  });
+});
 
 /***/ }),
 
