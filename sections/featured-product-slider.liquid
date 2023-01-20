@@ -10,7 +10,6 @@
             {% if block.settings.image != blank %}
               <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
             {% else %}
-              {% comment %} <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" /> {% endcomment %}
               {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
             {% endif %}
           </div>
@@ -18,9 +17,6 @@
             <div class="text-3xl font-GTlight">
               {{ block.settings.heading | escape }}
             </div>
-            {% comment %} <div class="flex-col items-center gap-4 text-center text-sm">
-            <div>{{ block.settings.content_text }}</div>
-            </div> {% endcomment %}
             <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
               <div>
                 <a href="{{ block.settings.link }}">{{ block.settings.link_text | escape }}</a>
