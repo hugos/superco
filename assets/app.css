@@ -738,6 +738,10 @@ video {
   src: url("./GT-Super-Display-Light.otf");
 }
 @font-face {
+  font-family: "GT-Super-Italic";
+  src: url("./GT-Super-Display-Light-Italic.otf");
+}
+@font-face {
   font-family: "Platform-Medium";
   src: url("./Platform-Medium.otf");
 }
