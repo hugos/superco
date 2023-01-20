@@ -7,7 +7,7 @@
         <div class="product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] bg-white">
           <div class="">
             {% assign product = all_products[block.settings.product_item] %}
-            {% if block.settings.image != blank %}
+            {% if product.featured_image != blank %}
               <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
