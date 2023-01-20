@@ -15,11 +15,11 @@
           </div>
           <div id="card-text" class="flex-row justify-between flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-10/12">
             <div class="text-3xl font-GTlight">
-              {% comment %} {{ product.title | strip }} {% endcomment %}
+              {{ product.title | strip }}
             </div>
             <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
               <div>
-                {% comment %} {{ product.price | money_without_trailing_zeros }} {% endcomment %}
+                {{ product.price | money_without_trailing_zeros }}
               </div>
             </div>
           </div>
