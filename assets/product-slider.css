@@ -28,3 +28,6 @@
 a.add_to_cart:hover {
     cursor: pointer;
 }
+.flickity-button:hover {
+    background: none;
+}
