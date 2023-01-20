@@ -762,6 +762,10 @@ video {
     height: 300px;
   }
 
+  .sm\:h-\[450px\] {
+    height: 450px;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
