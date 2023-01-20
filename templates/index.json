@@ -145,9 +145,8 @@
         },
         "91c8dfb5-4ead-40f7-8dd0-375db657af27": {
           "type": "card_block",
-          "disabled": true,
           "settings": {
-            "product_item": "",
+            "product_item": "classic-barware",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
             "link_text": "SHOP",
@@ -156,7 +155,6 @@
         },
         "283bd5ac-1969-4866-8da1-75d3aa38819c": {
           "type": "card_block",
-          "disabled": true,
           "settings": {
             "product_item": "",
             "heading": "Card Title",
@@ -167,7 +165,6 @@
         },
         "570a8a78-d944-473b-af51-4a2c5d8beccb": {
           "type": "card_block",
-          "disabled": true,
           "settings": {
             "product_item": "",
             "heading": "Card Title",
