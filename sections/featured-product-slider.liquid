@@ -54,24 +54,23 @@
     freeScroll: true
   });
 
-  $(document).ready(function() {
-    $(document).on('click', '.product-card', function() {
-      var quantity = $(".quantity option:selected").val();
-      quantity = parseInt(quantity);
-      var id = "15426278195309";
-      $.ajax({
-        type: 'POST',
-        url: '/cart/add.js',
-        dataType: 'json',
-        data: {
-          id: id
-        },
-        success: function() {
-          location.href = "/cart";
-        }
-      });
-    })
-  });
+
+  $(document).on('click', '.ad_to_cart', function() {
+    var obj = $(this);
+
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: {
+        quantity: 1,
+        id: $(this).attr("var_id")
+      },
+      dataType: 'json',
+      success: function(data) {
+        alert('Item added to cart');
+      }
+    });
+  })
 </script>
 {% schema %}
   {
