@@ -116,9 +116,9 @@
         "template--17594265633071__151b571c-3dfc-4ce3-8d0b-efc582cef203-1674078963caa02152-0": {
           "type": "card_block",
           "settings": {
+            "product_item": "classic-barware",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "background": "#cccccc",
             "link_text": "SHOP",
             "link": ""
           }
@@ -126,9 +126,9 @@
         "template--17594265633071__151b571c-3dfc-4ce3-8d0b-efc582cef203-1674078963caa02152-1": {
           "type": "card_block",
           "settings": {
+            "product_item": "",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "background": "#cccccc",
             "link_text": "SHOP",
             "link": ""
           }
@@ -136,9 +136,9 @@
         "9de0edd0-4abe-4dc3-b365-366dbc16a3c0": {
           "type": "card_block",
           "settings": {
+            "product_item": "",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "background": "#cccccc",
             "link_text": "SHOP",
             "link": ""
           }
@@ -146,9 +146,9 @@
         "91c8dfb5-4ead-40f7-8dd0-375db657af27": {
           "type": "card_block",
           "settings": {
+            "product_item": "",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "background": "#cccccc",
             "link_text": "SHOP",
             "link": ""
           }
@@ -156,9 +156,9 @@
         "283bd5ac-1969-4866-8da1-75d3aa38819c": {
           "type": "card_block",
           "settings": {
+            "product_item": "",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "background": "#cccccc",
             "link_text": "SHOP",
             "link": ""
           }
@@ -166,9 +166,9 @@
         "570a8a78-d944-473b-af51-4a2c5d8beccb": {
           "type": "card_block",
           "settings": {
+            "product_item": "",
             "heading": "Card Title",
             "content_text": "Write something that can cultivate your clients interest about your brand.",
-            "background": "#cccccc",
             "link_text": "SHOP",
             "link": ""
           }
