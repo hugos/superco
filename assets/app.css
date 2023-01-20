@@ -762,11 +762,19 @@ video {
     height: 450px;
   }
 
+  .sm\:h-xs {
+    height: 450px;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
 }
 @media (min-width: 768px) {
+
+  .md\:h-xl {
+    height: 800px;
+  }
 
   .md\:w-full {
     width: 100%;
