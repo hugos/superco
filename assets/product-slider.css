@@ -29,6 +29,6 @@ a.add_to_cart:hover {
     cursor: pointer;
 }
 
-.flickity-prev-next-button .arrow {
+.flickity-prev-next-button .next {
     background-color: red;
 }
