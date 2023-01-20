@@ -21,3 +21,6 @@
 .flickity-width {
     max-width: 1300px;
 }
+.flickity-enabled:focus {
+    outline: none;
+}
