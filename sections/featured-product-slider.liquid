@@ -3,32 +3,32 @@
 <section class="featured-product-slider">
   {%- for block in section.blocks -%}
     <div class="carousel">
-        <div class="mb-12 mt-12 carousel-cell">
-          <div class="product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] bg-white">
-            <div class="">
-              {% assign product = all_products[block.settings.product_item] %}
-              {% if block.settings.image != blank %}
-                <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
-              {% else %}
-                {% comment %} <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" /> {% endcomment %}
-                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
-              {% endif %}
+      <div class="mb-12 mt-12 carousel-cell">
+        <div class="product-card flex flex-col m-auto mb-20 relative p-3 my-1 px-1 content-card items-center h-[385px] w-[418px] bg-white">
+          <div class="">
+            {% assign product = all_products[block.settings.product_item] %}
+            {% if block.settings.image != blank %}
+              <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
+            {% else %}
+              {% comment %} <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" /> {% endcomment %}
+              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
+            {% endif %}
+          </div>
+          <div id="card-text" class="flex-row justify-between flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-10/12">
+            <div class="text-3xl font-GTlight">
+              {{ block.settings.heading | escape }}
             </div>
-            <div id="card-text" class="flex-row justify-between flex items-center bottom-4 absolute translate-x[-50%] gap-2 text-black w-10/12">
-              <div class="text-3xl font-GTlight">
-                {{ block.settings.heading | escape }}
-              </div>
-              {% comment %} <div class="flex-col items-center gap-4 text-center text-sm">
-              <div>{{ block.settings.content_text }}</div>
-              </div> {% endcomment %}
-              <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
-                <div>
-                  <a href="{{ block.settings.link }}">{{ block.settings.link_text | escape }}</a>
-                </div>
+            {% comment %} <div class="flex-col items-center gap-4 text-center text-sm">
+            <div>{{ block.settings.content_text }}</div>
+            </div> {% endcomment %}
+            <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
+              <div>
+                <a href="{{ block.settings.link }}">{{ block.settings.link_text | escape }}</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   {% endfor %}
 </section>
@@ -43,7 +43,8 @@
     cellAlign: 'center',
     freeScroll: true
   });
- /* {% if request.design_mode %}
+
+/* {% if request.design_mode %}
     document.addEventListener("shopify:section:load", function(event) {
       var elem = document.querySelector('.featured-product-slider .carousel'');
       var flkty = new Flickity(elem, {
@@ -98,11 +99,6 @@
             "default": "Write something that can cultivate your clients interest about your brand."
           },
           {
-            "id": "background",
-            "type": "color",
-            "label": "Card Color",
-            "default": "#cccccc"
-          }, {
             "id": "link_text",
             "type": "text",
             "label": "Text",
