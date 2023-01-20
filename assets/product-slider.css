@@ -29,7 +29,7 @@ a.add_to_cart:hover {
     cursor: pointer;
 }
 
-.flickity-prev-next-button .flickity-button-icon .arrow {
+.flickity-prev-next-button  {
     width: 35px;
     height: 50px;
 }
