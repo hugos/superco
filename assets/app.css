@@ -584,6 +584,9 @@ video {
 .h-\[800px\] {
   height: 800px;
 }
+.h-xl {
+  height: 800px;
+}
 .max-h-full {
   max-height: 100%;
 }
