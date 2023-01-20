@@ -30,5 +30,5 @@ a.add_to_cart:hover {
 }
 
 .flickity-prev-next-button .arrow {
-    
+    background-color: red;
 }
