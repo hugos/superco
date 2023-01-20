@@ -7,7 +7,7 @@
   \***********************/
 /***/ (() => {
 
-$(document).on('click', '.add_to_cart', function () {
+$(document).on('click', '.ad_to_cart', function () {
   var obj = $(this);
   $.ajax({
     type: 'POST',
