@@ -8,7 +8,7 @@
           <div class="">
             {% assign product = all_products[block.settings.product_item] %}
             {% if product.featured_image != blank %}
-              <img class="h-[313px]"  src="{{ product.featured_image | image_url: width: 1500 }}" />
+              <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
             {% endif %}
@@ -23,12 +23,12 @@
             </div>
             <div class="flex-col items-center font-PT-r tracking-widest mt-3 font-medium gap-4 text-center text-sm uppercase">
               <div>
-              {% if product.price != blank %}
-                {{ product.price | money_without_trailing_zeros }}
-              {% else %}
-                <span>$20</span>
-              {% endif %}
-              
+                {% if product.price != blank %}
+                  {{ product.price | money_without_trailing_zeros }}
+                {% else %}
+                  <span>$20</span>
+                {% endif %}
+
               </div>
             </div>
           </div>
@@ -75,28 +75,6 @@
             "id": "product_item",
             "type": "product",
             "label": "Choose the Product you want displayed"
-          },
-          {
-            "id": "heading",
-            "type": "text",
-            "label": "Card Heading",
-            "default": "Card Title"
-          },
-          {
-            "id": "content_text",
-            "type": "text",
-            "label": "Content Text",
-            "default": "Write something that can cultivate your clients interest about your brand."
-          },
-          {
-            "id": "link_text",
-            "type": "text",
-            "label": "Text",
-            "default": "SHOP"
-          }, {
-            "id": "link",
-            "type": "url",
-            "label": "Text URL"
           }
         ]
       }
