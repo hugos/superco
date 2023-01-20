@@ -43,32 +43,33 @@
 <script type="text/javascript">
   var elem = document.querySelector('.featured-product-slider');
   var flkty = new Flickity(elem, {
-    contain: true,
-    imagesLoaded: true,
-    wrapAround: true,
-    pageDots: false,
-    cellAlign: 'center',
-    freeScroll: true
-  });
-
-
-  (document).on('click', '.ad_to_cart', function() {
-    var obj = $(this);
-
-    $.ajax({
-      type: 'POST',
-      url: '/cart/add.js',
-      data: {
-        quantity: 1,
-        id: $(this).attr("var_id")
-      },
-      dataType: 'json',
-      success: function(data) {
-        alert('Item added to cart');
-      }
+      contain: true,
+      imagesLoaded: true,
+      wrapAround: true,
+      pageDots: false,
+      cellAlign: 'center',
+      freeScroll: true
     });
-  })
-</script>
+  
+  
+    $(document).ready(function () {
+    $(document).on('click', '.ad_to_cart', function() {
+      var obj = $(this);
+  
+      $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: {
+          quantity: 1,
+          id: $(this).attr("var_id")
+        },
+        dataType: 'json',
+        success: function(data) {
+          alert('Item added to cart');
+        }
+      });
+    })
+    });</script>
 {% schema %}
   {
     "name": "Featured Product Slider",
