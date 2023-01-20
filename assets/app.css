@@ -766,6 +766,10 @@ video {
     height: 450px;
   }
 
+  .sm\:h-full {
+    height: 100%;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -774,6 +778,10 @@ video {
 
   .md\:h-\[800px\] {
     height: 800px;
+  }
+
+  .md\:h-4\/6 {
+    height: 66.666667%;
   }
 
   .md\:w-full {
