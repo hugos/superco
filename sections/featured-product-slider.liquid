@@ -8,7 +8,7 @@
           <div class="">
             {% assign product = all_products[block.settings.product_item] %}
             {% if product.featured_image != blank %}
-              <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: '1200x1200' }}" />
+              <img class="h-[313px]" data-flickity-lazyload="{{ product.featured_image | img_url: master }}" />
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
             {% endif %}
