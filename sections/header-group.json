@@ -18,7 +18,8 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "header": {
       "type": "header",
@@ -33,10 +34,16 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom-header": {
+      "type": "custom-header",
+      "settings": {
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom-header"
   ]
 }
