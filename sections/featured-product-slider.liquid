@@ -9,7 +9,7 @@
           <a class="add_to_cart" var_id="{{ product.variants.first.id }}">
             <div>
               {% if product.featured_image != blank %}
-                <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }}" />
+                <img class="h-[313px]" src="{{ product.featured_image | image_url: width: 1500 }} alt="{{ product.featured_image.alt | escape }}" />
               {% else %}
                 {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder placeholder-img' }}
               {% endif %}
