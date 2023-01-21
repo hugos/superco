@@ -23,6 +23,14 @@
                     {{ link.title }}
                     {% include 'icon-arrow-down' %}
                   </a>
+									<ul>
+              {% for childlink in link.links %}
+                <li>
+                  <a href="{{ childlink.url }}">
+                    {{ childlink.title }}
+                  </a>
+                </li>
+              {% endfor %}
                 </li>
              {% endif %}
             {% endfor %}
