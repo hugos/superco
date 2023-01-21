@@ -13,68 +13,7 @@
                 {% endif %}
                 </a>
                 <div class="flex items-center lg:order-2">
-                        <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-                          {%- for link in section.settings.menu.links -%}
-                            <li>
-                              {%- if link.links != blank -%}
-                                <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
-                                  <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
-                                    {{ link.title | escape }}
-                                    {% render 'icon-arrow' %}
-                                    {% render 'icon-caret' %}
-                                  </summary>
-                                  <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
-                                    <div class="menu-drawer__inner-submenu">
-                                      <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
-                                        {% render 'icon-arrow' %}
-                                        {{ link.title | escape }}
-                                      </button>
-                                      <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                                        {%- for childlink in link.links -%}
-                                          <li>
-                                            {%- if childlink.links == blank -%}
-                                              <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                                {{ childlink.title | escape }}
-                                              </a>
-                                            {%- else -%}
-                                              <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
-                                                <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
-                                                  {{ childlink.title | escape }}
-                                                  {% render 'icon-arrow' %}
-                                                  {% render 'icon-caret' %}
-                                                </summary>
-                                                <div id="childlink-{{ childlink.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce">
-                                                  <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
-                                                    {% render 'icon-arrow' %}
-                                                    {{ childlink.title | escape }}
-                                                  </button>
-                                                  <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                                                    {%- for grandchildlink in childlink.links -%}
-                                                      <li>
-                                                        <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                                          {{ grandchildlink.title | escape }}
-                                                        </a>
-                                                      </li>
-                                                    {%- endfor -%}
-                                                  </ul>
-                                                </div>
-                                              </details>
-                                            {%- endif -%}
-                                          </li>
-                                        {%- endfor -%}
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </details>
-                              {%- else -%}
-                                <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
-                                  {{ link.title | escape }}
-                                </a>
-                              {%- endif -%}
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      
+                    
                     {% comment %} <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a>
                     <a href="#" class="text-black bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Get started</a> {% endcomment %}
                     <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
