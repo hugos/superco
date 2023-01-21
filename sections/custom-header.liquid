@@ -16,7 +16,7 @@
         </a>
         <div class="flex items-center lg:order-2">
           <ul>
-            {% for link in linklists[section.settings.menu].links %}
+            {% for link in section.settings.menu.links %}
               {% if link.links != blank %}
                 <li>
                   <a href="{{ link.url }}" class="text-black">
@@ -94,6 +94,12 @@
       {
         "type": "header",
         "content": "t:sections.header.settings.mobile_layout.content"
+      },
+      {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
       }
     ]
   }
